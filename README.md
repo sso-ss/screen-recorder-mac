@@ -13,11 +13,14 @@ Use Screen to record app demos, walkthroughs, tutorials, and presentations on yo
 - **Record your screen** with a choice of 30 or 60 FPS.
 - **Capture audio** from your microphone, your Mac's system audio, or both.
 - **Add a webcam overlay** with adjustable size and corner placement.
+- **Highlight clicks with smart zoom** that automatically zooms in on clicked areas in your exported video.
 - **Make your cursor easier to follow** with cursor visibility, size controls, and click highlights.
 - **Preview videos** inside the app, including recordings and imported video files.
 - **Save recordings as MOV files** to share or use in your preferred video editor.
 
 This is a test build. Recording behavior can vary by device and macOS version; make a short test recording before capturing anything important.
+
+Smart zoom is experimental: closely spaced clicks can sometimes return the view to an earlier target. Disable automatic zoom when reliable framing is essential.
 
 ## Requirements
 
