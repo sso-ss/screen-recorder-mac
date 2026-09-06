@@ -2,6 +2,8 @@
 
 Download **Screen**, a screen recording app for macOS.
 
+![Screen interface showing the recording preview and audio, webcam, quality, and cursor settings](screen-interface.png)
+
 This is the download-only repository for Screen. It contains installation instructions and packaged app releases, not the app's source code or development project. The installed app is named **Screen**.
 
 ## Requirements
