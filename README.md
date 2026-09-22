@@ -2,13 +2,13 @@
 
 Download **Screen**, a screen recording app for macOS.
 
-**Newest test build: [Screen 0.1.2, build 3](https://github.com/sso-ss/screen-recorder-mac/releases/tag/v0.1.2)**
+**Newest test build: [Screen 0.1.3, build 4](https://github.com/sso-ss/screen-recorder-mac/releases/tag/v0.1.3)**
 
-[Download for Apple Silicon](https://github.com/sso-ss/screen-recorder-mac/releases/download/v0.1.2/Screen-share-0.1.2-build3.zip)
+[Download for Apple Silicon](https://github.com/sso-ss/screen-recorder-mac/releases/download/v0.1.3/Screen-share-0.1.3-build4.zip)
 
-Version 0.1.2 is marked **Latest** for easy access to the newest download. It remains an experimental test build, not a production-ready release.
+Version 0.1.3 is marked **Latest** for easy access to the newest download. It remains an experimental test build, not a production-ready release.
 
-![Screen interface showing the recording preview and audio, webcam, quality, and cursor settings](screen-interface.png)
+![Screen interface with Hand cursor selected, Arrow and Circle choices, size slider, recording preview, and background settings](screen-interface.png)
 
 This is the download-only repository for Screen. It contains installation instructions and packaged app releases, not the app's source code or development project. The installed app is named **Screen**.
 
@@ -21,13 +21,17 @@ Use Screen to record app demos, walkthroughs, tutorials, and presentations on yo
 - **Add a webcam overlay** with adjustable size and corner placement.
 - **Highlight clicks with smart zoom** that automatically zooms in on clicked areas in your exported video.
 - **Choose recording backgrounds**, including the new Prism, Lagoon, Ember, and Midnight presets.
-- **Make your cursor easier to follow** with cursor visibility, size controls, and click highlights.
+- **Customize your recorded cursor** with Arrow, Hand, or Circle, a 50-300% size slider, and a visibility toggle. For the current recording, use Apply Cursor to re-export without recording again. This does not change your Mac's cursor.
+- **Use a native capture toolbar** that follows system appearance and accent color, with Liquid Glass on macOS 26 and system material on older versions.
+- **Get update reminders** with release notes, Download Update, Remind Me Later, and Skip This Version. Checks run at most daily while Screen is active and idle.
 - **Preview videos** inside the app, including recordings and imported video files.
 - **Save recordings as MOV files** to share or use in your preferred video editor.
 
 This is a test build. Recording behavior can vary by device and macOS version; make a short test recording before capturing anything important.
 
-Version 0.1.2 improves repeated-click zoom: nearby clicks extend the hold, distant clicks pan to the new target, and unfinished zoom-outs are interrupted from the current view. Smart zoom remains experimental; preview your exported recording before sharing.
+Version 0.1.3 also fixes stale display selections and clipped toolbar shadows. Click the display you want before clicking Record. Cursor re-editing is limited to recordings retained in the current app session, not imported finished videos or recordings reopened after quitting. Editable video/audio sources are kept locally for re-export and consume disk space.
+
+Smart zoom remains experimental; preview your exported recording before sharing. Actual multi-monitor recording, Liquid Glass on macOS 26, and installation on another Mac still need verification. Intermittent microphone input stalls on some devices and a brief black webcam opening frame remain known limitations.
 
 ## Requirements
 
@@ -36,8 +40,8 @@ Version 0.1.2 improves repeated-click zoom: nearby clicks extend the hold, dista
 
 ## Download and Install
 
-1. Open the [0.1.2 test release](https://github.com/sso-ss/screen-recorder-mac/releases/tag/v0.1.2).
-2. Download **Screen-share-0.1.2-build3.zip** under **Assets**, not GitHub's automatically generated source code archives.
+1. Open the [0.1.3 test release](https://github.com/sso-ss/screen-recorder-mac/releases/tag/v0.1.3).
+2. Download **Screen-share-0.1.3-build4.zip** under **Assets**, not GitHub's automatically generated source code archives.
 3. Double-click the ZIP to extract **Screen.app**.
 4. Move **Screen.app** to your **Applications** folder and open it.
 
@@ -80,6 +84,8 @@ When a recording preview is ready, **Command + S** opens the Save dialog in Scre
 
 ## Updates and Feedback
 
-To update, quit Screen, download a newer release, and replace the app in Applications.
+Starting with 0.1.3, Screen can remind you about new releases. You can also choose **Screen > Check for Updates...**. Download Update opens the GitHub release page; it does not install anything automatically. Reminders wait during capture selection, recording, and export.
+
+Users on 0.1.2 or older must install 0.1.3 manually once to receive future reminders. To update, quit Screen, download the app ZIP, and replace Screen in Applications. Keep your previous app or download an earlier release to roll back.
 
 Report problems through this repository's **Issues** section. Include your macOS version, Mac model, release version, and what happened. Remove private information from screenshots and recordings before sharing them.
