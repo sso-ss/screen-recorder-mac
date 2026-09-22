@@ -6,7 +6,7 @@ Download **Screen**, a screen recording app for macOS.
 
 [Download for Apple Silicon](https://github.com/sso-ss/screen-recorder-mac/releases/download/v0.1.2/Screen-share-0.1.2-build3.zip)
 
-Version 0.1.2 is marked as a prerelease for testing. GitHub's **Latest** badge still points to 0.1.1; use the link above for the newest test build.
+Version 0.1.2 is marked **Latest** for easy access to the newest download. It remains an experimental test build, not a production-ready release.
 
 ![Screen interface showing the recording preview and audio, webcam, quality, and cursor settings](screen-interface.png)
 
