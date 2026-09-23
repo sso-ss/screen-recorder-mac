@@ -2,11 +2,11 @@
 
 Download **Screen**, a screen recording app for macOS.
 
-**Newest test build: [Screen 0.1.4, build 5](https://github.com/sso-ss/screen-recorder-mac/releases/tag/v0.1.4)**
+**Newest test build: [Screen 0.1.5, build 6](https://github.com/sso-ss/screen-recorder-mac/releases/tag/v0.1.5)**
 
-[Download for Apple Silicon](https://github.com/sso-ss/screen-recorder-mac/releases/download/v0.1.4/Screen-share-0.1.4-build5.zip)
+[Download for Apple Silicon](https://github.com/sso-ss/screen-recorder-mac/releases/download/v0.1.5/Screen-share-0.1.5-build6.zip)
 
-Version 0.1.4 is marked **Latest** for easy access to the newest download. It remains an experimental test build, not a production-ready release.
+Version 0.1.5 is marked **Latest** for easy access to the newest download. It remains an experimental test build, not a production-ready release.
 
 ![Screen interface showing the recording preview and audio, webcam, quality, and cursor settings](screen-interface.png)
 
@@ -24,14 +24,16 @@ Use Screen to record app demos, walkthroughs, tutorials, and presentations on yo
 - **Customize your recorded cursor** with Arrow, Hand, or Circle, a 50-300% size slider, and a visibility toggle. Apply Cursor re-exports the current recording without changing your Mac's cursor.
 - **Use a native capture toolbar** that follows system appearance and accent color, with Liquid Glass on macOS 26 and system material on older versions.
 - **Get update reminders** with release notes, Download Update, Remind Me Later, and Skip This Version. Checks run at most daily while Screen is active and idle.
-- **Edit on a visual timeline** by trimming, splitting, removing sections, and reviewing detected pauses before removal.
+- **Edit on a visual timeline** by trimming, splitting, dragging clips to reorder them, and removing sections. Remaining clips close the gap automatically, and Undo restores timeline edits.
+- **Review detected pauses** on the timeline before choosing which sections to remove.
+- **Use consistent recording and editing controls** for cursor appearance, device layouts, and webcam settings.
 - **Frame videos for different destinations** with landscape, square, and vertical canvases, device layouts, and built-in backgrounds.
 - **Preview changes** inside the app before exporting recordings or imported video files.
 - **Save recordings as MOV files** to share or use in your preferred video editor.
 
 This is a test build. Recording behavior can vary by device and macOS version; make a short test recording before capturing anything important. Review detected pauses by listening to the preview before applying timeline edits.
 
-Version 0.1.4 improves capture-source selection, initial-frame readiness, and cursor motion over static screen content. Cursor re-editing is limited to recordings retained in the current app session, not imported finished videos or recordings reopened after quitting. Editable video/audio sources are kept locally for re-export and consume disk space.
+Version 0.1.5 adds gap-closing timeline cuts, drag-to-reorder clips, and matching recording/editing controls. Preview and export follow the new clip order, including audio and recorded overlays. Cursor re-editing is limited to recordings retained in the current app session, not imported finished videos or recordings reopened after quitting. Editable video/audio sources are kept locally for re-export and consume disk space.
 
 Smart zoom remains experimental; preview your exported recording before sharing. Actual multi-monitor recording, Liquid Glass on macOS 26, and installation on another Mac still need verification. Intermittent microphone input stalls on some devices and a brief black webcam opening frame remain known limitations.
 
@@ -42,8 +44,8 @@ Smart zoom remains experimental; preview your exported recording before sharing.
 
 ## Download and Install
 
-1. Open the [0.1.4 test release](https://github.com/sso-ss/screen-recorder-mac/releases/tag/v0.1.4).
-2. Download **Screen-share-0.1.4-build5.zip** under **Assets**, not GitHub's automatically generated source code archives.
+1. Open the [0.1.5 test release](https://github.com/sso-ss/screen-recorder-mac/releases/tag/v0.1.5).
+2. Download **Screen-share-0.1.5-build6.zip** under **Assets**, not GitHub's automatically generated source code archives.
 3. Double-click the ZIP to extract **Screen.app**.
 4. Move **Screen.app** to your **Applications** folder and open it.
 
