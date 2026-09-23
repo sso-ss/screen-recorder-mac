@@ -2,11 +2,13 @@
 
 Download **ScreenTake**, a screen recording and editing app for macOS.
 
-**Newest test build: [ScreenTake 0.1.6, build 7](https://github.com/sso-ss/screen-recorder-mac/releases/tag/v0.1.6)**
+**Newest test build: [ScreenTake 0.1.7, build 8](https://github.com/sso-ss/screen-recorder-mac/releases/tag/v0.1.7)**
 
-[Download for Apple Silicon](https://github.com/sso-ss/screen-recorder-mac/releases/download/v0.1.6/ScreenTake-share-0.1.6-build7.zip)
+**[Download for Apple Silicon (DMG, recommended)](https://github.com/sso-ss/screen-recorder-mac/releases/download/v0.1.7/ScreenTake-0.1.7-build8.dmg)**
 
-Version 0.1.6 is an experimental test build, not a production-ready release.
+[Alternative ZIP download](https://github.com/sso-ss/screen-recorder-mac/releases/download/v0.1.7/ScreenTake-share-0.1.7-build8.zip)
+
+Version 0.1.7 is an experimental test build, not a production-ready release.
 
 ![Screen interface showing the recording preview and audio, webcam, quality, and cursor settings](screen-interface.png)
 
@@ -21,7 +23,8 @@ Use ScreenTake to record app demos, walkthroughs, tutorials, and presentations o
 - **Add a webcam overlay** with adjustable size and corner placement.
 - **Highlight clicks with smart zoom** that automatically zooms in on clicked areas in your exported video.
 - **Choose recording backgrounds**, including Prism, Lagoon, Ember, and Midnight.
-- **Customize your recorded cursor** with Arrow, Hand, or Circle, a 50-300% size slider, and a visibility toggle. Apply Cursor re-exports the current recording without changing your Mac's cursor.
+- **Customize your recorded cursor** with Arrow, Hand, or Circle, a 50-300% size slider, and a visibility toggle. Apply Changes re-exports the current recording without changing your Mac's cursor.
+- **Adjust zoom strength** from 1.25x to 3x for zoom-enabled recordings retained in the current editing session.
 - **Use a native capture toolbar** that follows system appearance and accent color, with Liquid Glass on macOS 26 and system material on older versions.
 - **Get update reminders** with release notes, Download Update, Remind Me Later, and Skip This Version. Checks run at most daily while ScreenTake is active and idle.
 - **Edit on a visual timeline** by trimming, splitting, dragging clips to reorder them, and removing sections. Remaining clips close the gap automatically, and Undo restores timeline edits.
@@ -33,7 +36,7 @@ Use ScreenTake to record app demos, walkthroughs, tutorials, and presentations o
 
 This is a test build. Recording behavior can vary by device and macOS version; make a short test recording before capturing anything important. Review detected pauses by listening to the preview before applying timeline edits.
 
-Version 0.1.6 renames the app to ScreenTake. The existing bundle identifier is preserved; the installed bundle is now ScreenTake.app. The timeline features introduced in 0.1.5 remain available. Cursor re-editing is limited to recordings retained in the current app session, not imported finished videos or recordings reopened after quitting. Editable video/audio sources are kept locally for re-export and consume disk space.
+Version 0.1.7 gives cursor-enabled exports a steady 60 FPS timeline, requests 60 FPS live preview, and fixes export progress updates. Automated decoding checks confirm even preview frame timing; real-time preview smoothness across devices still needs verification. The app remains ScreenTake, with the existing bundle identifier and timeline features preserved. Cursor and zoom re-editing are limited to recordings retained in the current app session, not imported finished videos or recordings reopened after quitting. Editable video/audio sources are kept locally for re-export and consume disk space.
 
 Smart zoom remains experimental; preview your exported recording before sharing. Actual multi-monitor recording, Liquid Glass on macOS 26, and installation on another Mac still need verification. Intermittent microphone input stalls on some devices and a brief black webcam opening frame remain known limitations.
 
@@ -44,10 +47,13 @@ Smart zoom remains experimental; preview your exported recording before sharing.
 
 ## Download and Install
 
-1. Open the [0.1.6 test release](https://github.com/sso-ss/screen-recorder-mac/releases/tag/v0.1.6).
-2. Download **ScreenTake-share-0.1.6-build7.zip** under **Assets**, not GitHub's automatically generated source code archives.
-3. Double-click the ZIP to extract **ScreenTake.app**.
-4. Quit any running Screen app. Move **ScreenTake.app** to your **Applications** folder and open it. Remove the old Screen.app after checking the new build.
+1. Open the [0.1.7 test release](https://github.com/sso-ss/screen-recorder-mac/releases/tag/v0.1.7).
+2. Download **ScreenTake-0.1.7-build8.dmg** (recommended) under **Assets**, not GitHub's automatically generated source code archives.
+3. Save your current recording, then quit all running Screen or ScreenTake copies. Keep a backup of your previous app until you have checked the new build.
+4. Open the DMG and drag **ScreenTake.app** onto the **Applications** shortcut.
+5. Eject **Install ScreenTake**, then open **ScreenTake** from your Applications folder.
+
+Prefer a ZIP? Download **ScreenTake-share-0.1.7-build8.zip**, extract it, and move **ScreenTake.app** to Applications instead. Both downloads contain the same app.
 
 ## macOS Security Warning
 
@@ -90,6 +96,6 @@ When a recording preview is ready, **Command + S** opens the Save dialog in Scre
 
 Starting with 0.1.3, the app can remind you about new releases. You can also choose **ScreenTake > Check for Updates...**. Download Update opens the GitHub release page; it does not install anything automatically. Reminders wait during capture selection, recording, and export.
 
-Users on 0.1.2 or older must install a newer build manually once to receive future reminders. To update from Screen, quit the old app, download the ZIP, and move ScreenTake.app into Applications. Keep your previous app or download an earlier release to roll back.
+Users on 0.1.2 or older must install a newer build manually once to receive future reminders. To update from Screen, save your recording, quit the old app, open the DMG, and drag ScreenTake.app into Applications. The ZIP remains available as an alternative. Keep your previous app or download an earlier release to roll back.
 
 Report problems through this repository's **Issues** section. Include your macOS version, Mac model, release version, and what happened. Remove private information from screenshots and recordings before sharing them.
