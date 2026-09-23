@@ -2,15 +2,23 @@
 
 Download **ScreenTake**, a screen recording and editing app for macOS.
 
-**Newest test build: [ScreenTake 0.1.7, build 8](https://github.com/sso-ss/screen-recorder-mac/releases/tag/v0.1.7)**
+**Newest test build: [ScreenTake 0.1.8, build 9](https://github.com/sso-ss/screen-recorder-mac/releases/tag/v0.1.8)**
 
-**[Download for Apple Silicon (DMG, recommended)](https://github.com/sso-ss/screen-recorder-mac/releases/download/v0.1.7/ScreenTake-0.1.7-build8.dmg)**
+**[Download for Apple Silicon (DMG, recommended)](https://github.com/sso-ss/screen-recorder-mac/releases/download/v0.1.8/ScreenTake-0.1.8-build9.dmg)**
 
-[Alternative ZIP download](https://github.com/sso-ss/screen-recorder-mac/releases/download/v0.1.7/ScreenTake-share-0.1.7-build8.zip)
+[Alternative ZIP download](https://github.com/sso-ss/screen-recorder-mac/releases/download/v0.1.8/ScreenTake-share-0.1.8-build9.zip)
 
-Version 0.1.7 is an experimental test build, not a production-ready release.
+Version 0.1.8 is an experimental test build, not a production-ready release.
 
-![Screen interface showing the recording preview and audio, webcam, quality, and cursor settings](screen-interface.png)
+Screenshots captured during development of this build.
+
+### Recording workspace
+
+![ScreenTake recording workspace with canvas settings and background choices](screen-interface.png)
+
+### Video editor
+
+![ScreenTake video editor with a loaded preview, timeline, and canvas settings](screen-editor.png)
 
 This is the download-only repository for ScreenTake. It contains installation instructions and packaged app releases, not the app's source code or development project. The installed app is named **ScreenTake**.
 
@@ -20,7 +28,7 @@ Use ScreenTake to record app demos, walkthroughs, tutorials, and presentations o
 
 - **Record your screen** with a choice of 30 or 60 FPS.
 - **Capture audio** from your microphone, your Mac's system audio, or both.
-- **Add a webcam overlay** with adjustable size and corner placement.
+- **Add a webcam overlay** with adjustable size, shape, position, rotation, and mirroring.
 - **Highlight clicks with smart zoom** that automatically zooms in on clicked areas in your exported video.
 - **Choose recording backgrounds**, including Prism, Lagoon, Ember, and Midnight.
 - **Customize your recorded cursor** with Arrow, Hand, or Circle, a 50-300% size slider, and a visibility toggle. Apply Changes re-exports the current recording without changing your Mac's cursor.
@@ -36,7 +44,7 @@ Use ScreenTake to record app demos, walkthroughs, tutorials, and presentations o
 
 This is a test build. Recording behavior can vary by device and macOS version; make a short test recording before capturing anything important. Review detected pauses by listening to the preview before applying timeline edits.
 
-Version 0.1.7 gives cursor-enabled exports a steady 60 FPS timeline, requests 60 FPS live preview, and fixes export progress updates. Automated decoding checks confirm even preview frame timing; real-time preview smoothness across devices still needs verification. The app remains ScreenTake, with the existing bundle identifier and timeline features preserved. Cursor and zoom re-editing are limited to recordings retained in the current app session, not imported finished videos or recordings reopened after quitting. Editable video/audio sources are kept locally for re-export and consume disk space.
+Version 0.1.8 refines the editor controls, adds click-highlight colors and zoom focus controls, and expands webcam layout options. It retains the 60 FPS cursor export timeline and preview timing introduced in 0.1.7. Automated decoding checks confirm even preview frame timing; real-time preview smoothness across devices still needs verification. The app remains ScreenTake, with the existing bundle identifier and timeline features preserved. Cursor and zoom re-editing are limited to recordings retained in the current app session, not imported finished videos or recordings reopened after quitting. Editable video/audio sources are kept locally for re-export and consume disk space.
 
 Smart zoom remains experimental; preview your exported recording before sharing. Actual multi-monitor recording, Liquid Glass on macOS 26, and installation on another Mac still need verification. Intermittent microphone input stalls on some devices and a brief black webcam opening frame remain known limitations.
 
@@ -47,13 +55,13 @@ Smart zoom remains experimental; preview your exported recording before sharing.
 
 ## Download and Install
 
-1. Open the [0.1.7 test release](https://github.com/sso-ss/screen-recorder-mac/releases/tag/v0.1.7).
-2. Download **ScreenTake-0.1.7-build8.dmg** (recommended) under **Assets**, not GitHub's automatically generated source code archives.
+1. Open the [0.1.8 test release](https://github.com/sso-ss/screen-recorder-mac/releases/tag/v0.1.8).
+2. Download **ScreenTake-0.1.8-build9.dmg** (recommended) under **Assets**, not GitHub's automatically generated source code archives.
 3. Save your current recording, then quit all running Screen or ScreenTake copies. Keep a backup of your previous app until you have checked the new build.
 4. Open the DMG and drag **ScreenTake.app** onto the **Applications** shortcut.
-5. Eject **Install ScreenTake**, then open **ScreenTake** from your Applications folder.
+5. Eject **Install ScreenTake 0.1.8**, then open **ScreenTake** from your Applications folder.
 
-Prefer a ZIP? Download **ScreenTake-share-0.1.7-build8.zip**, extract it, and move **ScreenTake.app** to Applications instead. Both downloads contain the same app.
+Prefer a ZIP? Download **ScreenTake-share-0.1.8-build9.zip**, extract it, and move **ScreenTake.app** to Applications instead. Both downloads contain the same app.
 
 ## macOS Security Warning
 
