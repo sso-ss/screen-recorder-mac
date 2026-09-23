@@ -10,7 +10,7 @@ Download **ScreenTake**, a screen recording and editing app for macOS.
 
 Version 0.1.8 is an experimental test build, not a production-ready release.
 
-Screenshots captured during development of this build.
+Screenshots from ScreenTake 0.1.8 build 9.
 
 ### Recording workspace
 
