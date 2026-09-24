@@ -2,13 +2,13 @@
 
 Download **ScreenTake**, a screen recording and editing app for macOS.
 
-**Newest test build: [ScreenTake 0.1.8, build 9](https://github.com/sso-ss/screen-recorder-mac/releases/tag/v0.1.8)**
+**Newest test build: [ScreenTake 0.1.9, build 10](https://github.com/sso-ss/screen-recorder-mac/releases/tag/v0.1.9)**
 
-**[Download for Apple Silicon (DMG, recommended)](https://github.com/sso-ss/screen-recorder-mac/releases/download/v0.1.8/ScreenTake-0.1.8-build9.dmg)**
+**[Download for Apple Silicon (DMG, recommended)](https://github.com/sso-ss/screen-recorder-mac/releases/download/v0.1.9/ScreenTake-0.1.9-build10.dmg)**
 
-[Alternative ZIP download](https://github.com/sso-ss/screen-recorder-mac/releases/download/v0.1.8/ScreenTake-share-0.1.8-build9.zip)
+[Alternative ZIP download](https://github.com/sso-ss/screen-recorder-mac/releases/download/v0.1.9/ScreenTake-share-0.1.9-build10.zip)
 
-Version 0.1.8 is an experimental test build, not a production-ready release.
+Version 0.1.9 is an experimental test build, not a production-ready release. It improves Screen Recording permission requests and removes a misleading Xcode signing warning. It is not a verified fix for the reported screen-access failure on another Mac.
 
 Screenshots from ScreenTake 0.1.8 build 9.
 
@@ -55,13 +55,13 @@ Smart zoom remains experimental; preview your exported recording before sharing.
 
 ## Download and Install
 
-1. Open the [0.1.8 test release](https://github.com/sso-ss/screen-recorder-mac/releases/tag/v0.1.8).
-2. Download **ScreenTake-0.1.8-build9.dmg** (recommended) under **Assets**, not GitHub's automatically generated source code archives.
+1. Open the [0.1.9 test release](https://github.com/sso-ss/screen-recorder-mac/releases/tag/v0.1.9).
+2. Download **ScreenTake-0.1.9-build10.dmg** (recommended) under **Assets**, not GitHub's automatically generated source code archives.
 3. Save your current recording, then quit all running Screen or ScreenTake copies. Keep a backup of your previous app until you have checked the new build.
 4. Open the DMG and drag **ScreenTake.app** onto the **Applications** shortcut.
-5. Eject **Install ScreenTake 0.1.8**, then open **ScreenTake** from your Applications folder.
+5. Eject **Install ScreenTake 0.1.9**, then open **ScreenTake** from your Applications folder.
 
-Prefer a ZIP? Download **ScreenTake-share-0.1.8-build9.zip**, extract it, and move **ScreenTake.app** to Applications instead. Both downloads contain the same app.
+Prefer a ZIP? Download **ScreenTake-share-0.1.9-build10.zip**, extract it, and move **ScreenTake.app** to Applications instead. Both downloads contain the same app.
 
 ## macOS Security Warning
 
@@ -79,6 +79,8 @@ Do not disable macOS security protections. If no override is available or the ap
 ## Permissions
 
 Allow **Screen Recording** when prompted. On newer macOS versions, this setting may be called **Screen & System Audio Recording**.
+
+If access still fails, quit all ScreenTake copies and confirm the installed app in Applications is enabled in this setting. Removing an old ScreenTake entry and re-adding the installed app may help with stale permissions, but this has not been confirmed as the cause of the reported failure. Reopen ScreenTake and make a short test recording.
 
 Microphone and camera features also require **Microphone** and **Camera** access. You can manage these permissions in **System Settings > Privacy & Security**. Quit and reopen ScreenTake if macOS asks you to.
 
